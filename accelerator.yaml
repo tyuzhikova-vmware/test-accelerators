@@ -1,10 +1,11 @@
 accelerator:
-  displayName: Simple Accelerator
-  description: Contains just a README
+  displayName: Simple Accelerator with Fragment
+  description: Contains just a README and java-version
   iconUrl: https://images.freecreatives.com/wp-content/uploads/2015/05/smiley-559124_640.jpg
   tags:
     - simple
     - getting-started
+    - test
 
   imports:
     - name: java-version
