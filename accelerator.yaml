@@ -5,3 +5,12 @@ accelerator:
   tags:
     - simple
     - getting-started
+
+  imports:
+    - name: java-version
+
+  engine:
+    merge:
+      - include: [ "**/*" ]
+      - type: InvokeFragment
+        reference: java-version
