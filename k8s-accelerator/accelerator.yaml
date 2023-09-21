@@ -13,7 +13,7 @@ accelerator:
     required: true
     defaultValue: maven
     choices:
-    - value: yes
+    - value: yes1
       text: Yes!
     - value: very
       text: I'm very excited!
