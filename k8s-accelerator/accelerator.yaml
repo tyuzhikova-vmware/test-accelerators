@@ -19,10 +19,10 @@ accelerator:
       text: I'm very excited!
 
     imports:
-      - name: currentWeather
+    - name: k8s-weather
 
     engine:
-      merge:
-        - include: [ "**/*" ]
+      - merge:
+        - include: [ "**" ]
         - type: InvokeFragment
-          reference: currentWeather
+          reference: k8s-weather
