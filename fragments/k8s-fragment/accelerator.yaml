@@ -1,0 +1,21 @@
+accelerator:
+  options:
+    - name: currentWeather
+      inputType: select
+      label: what's the weather today?
+      choices:
+        - value: "sunny"
+          text: sunny
+        - value: "rainy"
+          text: rainy
+        - value: "cloudy"
+          text: cloudy
+      defaultValue: "sunny"
+
+  engine:
+    - include: [ "someCodeFile" ]
+      chain:
+        - type: ReplaceText
+          regex:
+            pattern: "weather = .*"
+            with: "'weather = ''' + #current-weather + ''''"
