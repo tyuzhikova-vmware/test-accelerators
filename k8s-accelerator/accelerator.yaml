@@ -23,6 +23,6 @@ accelerator:
 
     engine:
       - merge:
-        - include: [ "**" ]
+        - include: [ "**/*" ]
         - type: InvokeFragment
           reference: k8s-weather
