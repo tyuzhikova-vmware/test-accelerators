@@ -2,7 +2,7 @@ accelerator:
   options:
     - name: currentWeather
       inputType: select
-      label: what's the weather today?
+      label: what is the weather today?
       choices:
         - value: "sunny"
           text: sunny
