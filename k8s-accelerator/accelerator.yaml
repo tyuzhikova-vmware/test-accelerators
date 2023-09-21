@@ -18,11 +18,11 @@ accelerator:
     - value: very
       text: I'm very excited!
 
-    imports:
-    - name: k8s-weather
+  imports:
+  - name: k8s-weather
 
-    engine:
-      - merge:
-        - include: [ "**/*" ]
-        - type: InvokeFragment
-          reference: k8s-weather
+engine:
+  - merge:
+    - include: [ "**/*" ]
+    - type: InvokeFragment
+      reference: k8s-weather
