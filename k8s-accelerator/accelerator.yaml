@@ -17,3 +17,12 @@ accelerator:
       text: Yes!
     - value: very
       text: I'm very excited!
+
+    imports:
+      - name: currentWeather
+
+    engine:
+      merge:
+        - include: [ "**/*" ]
+        - type: InvokeFragment
+          reference: currentWeather
