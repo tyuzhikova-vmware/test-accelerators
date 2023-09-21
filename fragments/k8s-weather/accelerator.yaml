@@ -1,6 +1,6 @@
 accelerator:
   options:
-    - name: currentWeather
+    - name: k8sWeather
       inputType: select
       label: what is the weather today?
       choices:
