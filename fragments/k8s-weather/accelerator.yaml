@@ -19,4 +19,4 @@ engine:
       - type: ReplaceText
         regex:
           pattern: "weather = .*"
-          with: "'weather = ''' + #current-weather + ''''"
+          with: "'weather = ''' + #k8sWeather + ''''"
