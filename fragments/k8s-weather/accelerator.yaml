@@ -12,7 +12,8 @@ accelerator:
           text: cloudy
       defaultValue: "sunny"
 
-  engine:
+engine:
+  merge:
     - include: [ "someCodeFile" ]
       chain:
         - type: ReplaceText
