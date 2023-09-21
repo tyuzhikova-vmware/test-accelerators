@@ -3,9 +3,9 @@ accelerator:
   description: testing acc flow in K8s mode
   iconUrl: https://images.freecreatives.com/wp-content/uploads/2015/05/smiley-559124_640.jpg
   tags:
-    - simple
-    - getting-started
-    - test
+  - simple
+  - getting-started
+  - test
   options:
   - name: testOption
     label: are you excited about TAP 1.7.0?
@@ -22,6 +22,7 @@ accelerator:
   - name: k8s-weather
 
 engine:
+  chain:
   - merge:
     - include: [ "**/*" ]
     - type: InvokeFragment

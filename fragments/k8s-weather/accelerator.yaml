@@ -1,22 +1,22 @@
 accelerator:
   options:
-    - name: k8sWeather
-      inputType: select
-      label: what is the weather today?
-      choices:
-        - value: "sunny"
-          text: sunny
-        - value: "rainy"
-          text: rainy
-        - value: "cloudy"
-          text: cloudy
-      defaultValue: "sunny"
+  - name: k8sWeather
+    inputType: select
+    label: what is the weather today?
+    choices:
+    - value: "sunny"
+      text: sunny
+    - value: "rainy"
+      text: rainy
+    - value: "cloudy"
+      text: cloudy
+    defaultValue: "sunny"
 
 engine:
   merge:
     - include: [ "someCodeFile" ]
       chain:
-        - type: ReplaceText
-          regex:
-            pattern: "weather = .*"
-            with: "'weather = ''' + #current-weather + ''''"
+      - type: ReplaceText
+        regex:
+          pattern: "weather = .*"
+          with: "'weather = ''' + #current-weather + ''''"
