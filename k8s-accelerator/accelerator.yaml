@@ -1,0 +1,19 @@
+accelerator:
+  displayName: K8s Test Accelerator
+  description: testing acc flow in K8s mode
+  iconUrl: https://images.freecreatives.com/wp-content/uploads/2015/05/smiley-559124_640.jpg
+  tags:
+    - simple
+    - getting-started
+    - test
+  options:
+  - name: testOption
+    label: are you excited about TAP 1.7.0?
+    inputType: select
+    required: true
+    defaultValue: maven
+    choices:
+    - value: yes
+      text: Yes!
+    - value: very
+      text: I'm very excited!
