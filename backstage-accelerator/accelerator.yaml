@@ -27,6 +27,7 @@ spec:
   - name: backstageWeather
 
   engine:
+    type: YTT
     chain:
     - merge:
       - include: [ "**/*" ]
