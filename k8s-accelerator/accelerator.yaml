@@ -10,7 +10,6 @@ accelerator:
   - name: testOption
     label: are you excited about TAP 1.7.0?
     inputType: select
-    required: true
     choices:
     - value: "yes1"
       text: Yes!
