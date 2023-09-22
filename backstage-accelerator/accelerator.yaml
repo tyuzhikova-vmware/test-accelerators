@@ -1,0 +1,34 @@
+apiVersion: entity.accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  title: Backstage Test Accelerator
+  name: backstageTestAccelerator
+  description: test Backstage accelerator
+spec:
+  accelerator:
+    iconUrl: https://images.freecreatives.com/wp-content/uploads/2015/05/smiley-559124_640.jpg
+    tags:
+    - simple
+    - getting-started
+    - test
+    options:
+    - name: testOption
+      label: are you excited about TAP 1.7.0?
+      inputType: select
+      choices:
+      - value: "yes1"
+        text: Yes!
+      - value: "very"
+        text: I'm very excited!
+      defaultValue: "yes1"
+
+
+  imports:
+  - name: backstageWeather
+
+  engine:
+    chain:
+    - merge:
+      - include: [ "**/*" ]
+      - type: InvokeFragment
+        reference: backstageWeather
