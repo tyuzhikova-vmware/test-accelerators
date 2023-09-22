@@ -12,11 +12,11 @@ accelerator:
     inputType: select
     required: true
     choices:
-    - value: "yes"
+    - value: "yes1"
       text: Yes!
     - value: "very"
       text: I'm very excited!
-    defaultValue: "yes"
+    defaultValue: "yes1"
 
 
   imports:
