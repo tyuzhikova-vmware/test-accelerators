@@ -11,12 +11,13 @@ accelerator:
     label: are you excited about TAP 1.7.0?
     inputType: select
     required: true
-    defaultValue: maven
     choices:
-    - value: yes1
+    - value: yes
       text: Yes!
     - value: very
       text: I'm very excited!
+    defaultValue: yes
+
 
   imports:
   - name: k8s-weather
