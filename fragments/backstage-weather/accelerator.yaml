@@ -1,29 +1,26 @@
 apiVersion: entity.accelerator.apps.tanzu.vmware.com/v1alpha1
 kind: Fragment
 metadata:
-  title: backstageWeather
-  name: backstageWeather
-  description: test accelerator
+  name: bs-weather
 spec:
   accelerator:
     options:
-    - name: backstageWeather
-      inputType: select
-      label: what is the weather today?
-      choices:
-      - value: "sunny"
-        text: sunny
-      - value: "rainy"
-        text: rainy
-      - value: "cloudy"
-        text: cloudy
-      defaultValue: "sunny"
-
+      - name: bsWeather
+        inputType: select
+        label: what is the weather today?
+        choices:
+          - value: "sunny"
+            text: sunny
+          - value: "rainy"
+            text: rainy
+          - value: "cloudy"
+            text: cloudy
+        defaultValue: "sunny"
   engine:
     merge:
-      - include: [ "someCodeFile" ]
+      - include: ["someCodeFile"]
         chain:
-        - type: ReplaceText
-          regex:
-            pattern: "weather = .*"
-            with: "'weather = ''' + #backstageWeather + ''''"
+          - type: ReplaceText
+            regex:
+              pattern: "weather = .*"
+              with: "'weather = ''' + #bsWeather + ''''"
